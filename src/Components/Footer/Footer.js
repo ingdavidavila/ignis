@@ -1,15 +1,17 @@
 import React from "react";
 import './Footer.css';
+import Instagram from "../Pictures/87390.png";
+import Facebook from "../Pictures/20673.png";
 
 class Footer extends React.Component{
     render() {
       return(
       <div className="footer">
       <a href="https://instagram.com/ignis.productions?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener">
-      <img src="87390.png" id="social" href=""/>
+      <img src={Instagram} id="social" href=""/>
       </a>
       <a href="https://www.facebook.com/profile.php?id=100083416443628" target="_blank" rel="noopener">
-      <img src="20673.png" id="social" href=""/>
+      <img src= {Facebook} id="social" href=""/>
       </a>
       <div className="inner">
         <div className="rights">
