@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import logo from "../Pictures/Ignislogo.png";
 
 import './Navbar.css';
 
@@ -10,7 +11,7 @@ class NavbarscrollExample extends React.Component{
   return (
       <Navbar expand='lg'>
         <Container fluid >
-          <Navbar.Brand href="/"><img src='./Ignislogo.png' alt="logo" className='logo-nav'/></Navbar.Brand>
+          <Navbar.Brand href="/"><img src={logo}alt="logo" className='logo-nav'/></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
