@@ -11,7 +11,7 @@ class NavbarscrollExample extends React.Component{
   return (
       <Navbar expand='lg'>
         <Container fluid >
-          <Navbar.Brand href="/"><img src={logo}alt="logo" className='logo-nav'/></Navbar.Brand>
+          <Navbar.Brand href="/"><img src={logo} alt="logo" className='logo-nav' /></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -19,7 +19,7 @@ class NavbarscrollExample extends React.Component{
               navbarScroll
             >
               
-              <Nav.Link href="#about" >
+              <Nav.Link href="#about">
                 About us
               </Nav.Link>
               <Nav.Link href="#contact" >
