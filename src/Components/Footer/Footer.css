@@ -36,3 +36,24 @@
 a + a {
   margin-left: 10px;
 }  
+
+
+@media (max-width: 70em) and (orientation: portrait) {
+  .footer{
+      font-size: .5em;
+      flex-direction: column;
+  }
+
+  .socials a{
+    font-size: .5em;
+  }
+
+  .socials{
+    float: none;
+  }
+  
+  .rights{
+    float: none;
+  }
+
+}
