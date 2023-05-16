@@ -49,5 +49,12 @@ img{
 @media (max-width: 70em) and (orientation: portrait) {
     .cardsdiv{
         flex-direction: column;
+        margin-top: 50%;
+    }
+
+    .servObj{
+        width: 400px;
+        height: 300px;
+        overflow: hidden;
     }
 }
