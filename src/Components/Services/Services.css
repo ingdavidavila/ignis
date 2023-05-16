@@ -46,7 +46,7 @@ img{
     top: -100%;
 }
 
-@media (min-width: 70em) and (orientation: portrait) {
+@media (max-width: 70em) and (orientation: portrait) {
     .cardsdiv{
         flex-direction: column;
     }
