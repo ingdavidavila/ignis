@@ -47,6 +47,12 @@ img{
 }
 
 @media (max-width: 70em) and (orientation: portrait) {
+        .cardsdiv{
+            flex-direction: column;
+        }
+}
+
+@media (max-width: 60em) and (orientation: portrait) {
     .cardsdiv{
         flex-direction: column;
         margin-top: 50%;
