@@ -38,7 +38,7 @@ a + a {
 }  
 
 
-@media (max-width: 70em) and (orientation: portrait) {
+@media (max-width: 60em) and (orientation: portrait) {
   .footer{
       font-size: .5em;
       flex-direction: column;
