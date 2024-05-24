@@ -46,7 +46,7 @@ const VideoCarousel = () => {
                 url={videoObj.src}
                 pip={false}
                 controls={true}
-                playing={false}
+                playing={activePlay !== key ? false : true}
               />
               <Carousel.Caption>
                 <h3>{videoObj.title}</h3>
