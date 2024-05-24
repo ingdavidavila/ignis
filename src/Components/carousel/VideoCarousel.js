@@ -10,7 +10,11 @@ import "bootstrap/dist/css/bootstrap.css";
 
 
 const VideoCarousel = () => {
-  
+  const [activePlay, setActivePlay] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+  setActivePlay(selectedIndex);
+  };
   const videoProperties = [
     {
       id: 1,
@@ -30,6 +34,8 @@ const VideoCarousel = () => {
       src: Vid3,
       credit: "Video by Ignis Productions",
     },
+
+    
   ];
 
 
