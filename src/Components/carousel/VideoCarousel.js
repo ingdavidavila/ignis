@@ -1,5 +1,5 @@
 import "./VideoCarousel.css";
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import { Carousel } from "react-bootstrap";
 import Vid1 from "../videos/vid1.mp4";
 import Vid2 from "../videos/vid2.mp4";
@@ -7,10 +7,13 @@ import Vid3 from "../videos/vid3.mp4";
 import ReactPlayer from "react-player";
 import "bootstrap/dist/css/bootstrap.css";
 
-
-
 const VideoCarousel = () => {
-  
+  const [activePlay, setActivePlay] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setActivePlay(selectedIndex);
+  };
+
   const videoProperties = [
     {
       id: 1,
@@ -32,21 +35,20 @@ const VideoCarousel = () => {
     },
   ];
 
-
   return (
     <div className="carousel">
       <div className="pastwork">
         <a>Past Work</a>
       </div>
-      <Carousel >
+      <Carousel activeIndex={activePlay} onSelect={handleSelect}>
         {videoProperties.map((videoObj) => {
           return (
             <Carousel.Item key={videoObj.id}>
               <ReactPlayer
                 url={videoObj.src}
-                pip={true}
+                pip={false}
                 controls={true}
-                playing={false}
+                playing={activePlay === videoObj.id - 1}
               />
               <Carousel.Caption>
                 <h3>{videoObj.title}</h3>
@@ -61,4 +63,3 @@ const VideoCarousel = () => {
 };
 
 export default VideoCarousel;
-
