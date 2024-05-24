@@ -7,14 +7,14 @@ import Vid3 from "../videos/vid3.mp4";
 import ReactPlayer from "react-player";
 import "bootstrap/dist/css/bootstrap.css";
 
+const [activePlay, setActivePlay] = useState(0);
 
+const handleSelect = (selectedIndex, e) => {
+setActivePlay(selectedIndex);
+};
 
 const VideoCarousel = () => {
-  const [activePlay, setActivePlay] = useState(0);
 
-  const handleSelect = (selectedIndex, e) => {
-  setActivePlay(selectedIndex);
-  };
   const videoProperties = [
     {
       id: 1,
