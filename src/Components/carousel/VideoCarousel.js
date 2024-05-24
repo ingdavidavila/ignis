@@ -44,7 +44,7 @@ const VideoCarousel = () => {
             <Carousel.Item key={videoObj.id}>
               <ReactPlayer
                 url={videoObj.src}
-                pip={true}
+                pip={false}
                 controls={true}
                 playing={false}
               />
