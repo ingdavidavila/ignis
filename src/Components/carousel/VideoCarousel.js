@@ -7,13 +7,12 @@ import Vid3 from "../videos/vid3.mp4";
 import ReactPlayer from "react-player";
 import "bootstrap/dist/css/bootstrap.css";
 
-const [activePlay, setActivePlay] = useState(0);
-
-const handleSelect = (selectedIndex, e) => {
-setActivePlay(selectedIndex);
-};
-
 const VideoCarousel = () => {
+  const [activePlay, setActivePlay] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setActivePlay(selectedIndex);
+  };
 
   const videoProperties = [
     {
@@ -34,17 +33,14 @@ const VideoCarousel = () => {
       src: Vid3,
       credit: "Video by Ignis Productions",
     },
-
-    
   ];
-
 
   return (
     <div className="carousel">
       <div className="pastwork">
         <a>Past Work</a>
       </div>
-      <Carousel onSelect={handleSelect}>
+      <Carousel activeIndex={activePlay} onSelect={handleSelect}>
         {videoProperties.map((videoObj) => {
           return (
             <Carousel.Item key={videoObj.id}>
@@ -52,7 +48,7 @@ const VideoCarousel = () => {
                 url={videoObj.src}
                 pip={false}
                 controls={true}
-                playing={activePlay !== key ? false : true}
+                playing={activePlay === videoObj.id - 1}
               />
               <Carousel.Caption>
                 <h3>{videoObj.title}</h3>
@@ -67,4 +63,3 @@ const VideoCarousel = () => {
 };
 
 export default VideoCarousel;
-
