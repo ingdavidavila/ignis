@@ -44,7 +44,7 @@ const VideoCarousel = () => {
       <div className="pastwork">
         <a>Past Work</a>
       </div>
-      <Carousel >
+      <Carousel onSelect={handleSelect}>
         {videoProperties.map((videoObj) => {
           return (
             <Carousel.Item key={videoObj.id}>
