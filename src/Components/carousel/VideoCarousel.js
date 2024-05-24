@@ -1,5 +1,5 @@
 import "./VideoCarousel.css";
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import { Carousel } from "react-bootstrap";
 import Vid1 from "../videos/vid1.mp4";
 import Vid2 from "../videos/vid2.mp4";
