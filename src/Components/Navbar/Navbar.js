@@ -22,9 +22,7 @@ class NavbarscrollExample extends React.Component{
               <Nav.Link href="#about">
                 About us
               </Nav.Link>
-              <Nav.Link href="#contact" >
-                Contact
-              </Nav.Link>
+              <a href="mailto:ignis.productions@hotmail.com" onclick="window.location.href='np.html'">Contact</a>
             </Nav>
             {/* <Form className="d-flex">
               <Form.Control
