@@ -1,31 +1,44 @@
-import React from "react";
+import React from 'react';
+import logo from '../../assets/images/logo.png';
+import { EMAIL, FACEBOOK_URL, INSTAGRAM_URL, QUOTE_MAILTO } from '../../siteConfig';
+import { FacebookIcon, InstagramIcon } from '../Icons/Icons';
 import './Footer.css';
-import Instagram from "../Pictures/87390.png";
-import Facebook from "../Pictures/20673.png";
 
-class Footer extends React.Component{
-    render() {
-      return(
-      <div className="footer">
-      <a href="https://instagram.com/ignis.productions?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener">
-      <img src={Instagram} id="social" href=""/>
-      </a>
-      <a href="https://www.facebook.com/profile.php?id=100083416443628" target="_blank" rel="noopener">
-      <img src= {Facebook} id="social" href=""/>
-      </a>
-      <div className="inner">
-        <div className="rights">
-        <p>ALL RIGHTS RESERVED Ignis Productions. </p><br/>
-        <p>POWERED BY Ignins DevOps</p>
+const Footer = () => (
+  <footer className="footer">
+    <div className="container">
+      <div className="footer__top">
+        <div className="footer__brand">
+          <img src={logo} alt="" width="48" height="48" />
+          <div>
+            <p className="footer__name">Ignis Productions</p>
+            <p className="footer__tagline">Video production · McAllen, TX</p>
+          </div>
         </div>
-        <div className="socials">
-          <h4><a href="https://www.instagram.com/direct/t/17851536095787794">Message us on instagram</a></h4><br />
-          <h4><a href="https://www.facebook.com/messages/t/103403292436482">Message us on facebook</a></h4><br />
-        </div>
+
+        <nav className="footer__links" aria-label="Footer">
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href={QUOTE_MAILTO}>{EMAIL}</a>
+        </nav>
+
+        <div className="footer__socials">
+          <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Ignis Productions on Instagram">
+            <InstagramIcon />
+          </a>
+          <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" aria-label="Ignis Productions on Facebook">
+            <FacebookIcon />
+          </a>
         </div>
       </div>
-       ) 
-      }
-}
+
+      <div className="footer__bottom">
+        <p>© {new Date().getFullYear()} Ignis Productions. All rights reserved.</p>
+        <p>Powered by Ignis DevOps</p>
+      </div>
+    </div>
+  </footer>
+);
 
 export default Footer;
