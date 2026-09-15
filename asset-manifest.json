@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ignis/static/css/main.780c2c5d.css",
+    "main.js": "/ignis/static/js/main.07bfbb16.js",
+    "static/media/habaneros-2.mp4": "/ignis/static/media/habaneros-2.f2fe27f78a10b458f644.mp4",
+    "static/media/habaneros.mp4": "/ignis/static/media/habaneros.ca1141535368d1338c25.mp4",
+    "static/media/altamar.mp4": "/ignis/static/media/altamar.d181dec99010056cf442.mp4",
+    "static/media/marketing.jpg": "/ignis/static/media/marketing.04ad48da81c4527095e9.jpg",
+    "static/media/video-production.jpg": "/ignis/static/media/video-production.8ee9b10536116e850edf.jpg",
+    "static/media/video-editing.jpg": "/ignis/static/media/video-editing.af8a19160ffcb2a3ae77.jpg",
+    "static/media/poster-habaneros-2.jpg": "/ignis/static/media/poster-habaneros-2.b70f02704f9fea9677fe.jpg",
+    "static/media/poster-habaneros.jpg": "/ignis/static/media/poster-habaneros.a56b5934f8bde4ad78ac.jpg",
+    "static/media/poster-hero.jpg": "/ignis/static/media/poster-hero.9d476da241e3b85d96b2.jpg",
+    "static/media/poster-altamar.jpg": "/ignis/static/media/poster-altamar.10231b32bb2643124cf1.jpg",
+    "static/media/logo.png": "/ignis/static/media/logo.5a712b07e5d6fdd00518.png",
+    "index.html": "/ignis/index.html",
+    "main.780c2c5d.css.map": "/ignis/static/css/main.780c2c5d.css.map",
+    "main.07bfbb16.js.map": "/ignis/static/js/main.07bfbb16.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.780c2c5d.css",
+    "static/js/main.07bfbb16.js"
+  ]
+}
